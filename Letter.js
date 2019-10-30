@@ -1,15 +1,15 @@
-let Letter = function(placeHolder) {
-    this.placeHolder = placeHolder,
-    this.value = false,
-    this.guess = function() {
+function Letter(placeHolder) {
+    this.placeHolder = placeHolder;
+    this.value = false;
+    this.getCurrentValue = function() {
         if(this.value) {
             return placeHolder;
         }
         return "_";
     }
 
-    this.update = function(x) {
-        if (x === placeHolder) {
+    this.checkLetter = function(x) {
+        if (x.toLowerCase() === placeHolder.toLowerCase()) {
             this.value = true;
         }
     }
