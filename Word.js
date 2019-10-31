@@ -12,9 +12,7 @@ Word.prototype.display = function () {
     // for (let i = 0; i < this.letters.length; i++) {
     //     const letter = this.letters[i];
     //     displayString += letter.getCurrentValue() + " ";
-        
     // }
-
     // return displayString;
      console.log(this.getLetterValuesArray().join(' '));
 };
